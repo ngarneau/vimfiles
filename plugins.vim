@@ -14,8 +14,8 @@ let Tlist_Close_On_Select = 1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Show_One_File = 1
 let Tlist_Sort_Type = "name"
-"let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
-let Tlist_Ctags_Cmd = '/Users/remi/Local/homebrew/bin/ctags'
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+"let Tlist_Ctags_Cmd = '/Users/remi/Local/homebrew/bin/ctags'
 " }}}
 
 " CommandT settings {{{
@@ -75,6 +75,8 @@ let g:no_html_menu = 'yes'
 " BufExplorer settings {{{
 " ----------------------------------------------------------------------------------------------------
 let g:bufExplorerSortBy='number'
+nnoremap <silent> <f2> :BufferExplorer<cr>
+nnoremap <Leader>b :BufExplorer<CR>
 " }}}
 
 " Rails.vim settings {{{
@@ -86,6 +88,14 @@ nmap <Leader>1 :Rmodel<CR>
 nmap <Leader>2 :Rview<CR>
 nmap <Leader>3 :Rcontroller<CR>
 let g:rails_statusline=0
+" }}}
+
+" NERDTree settings" {{{
+" ----------------------------------------------------------------------------------------------------
+""nnoremap <C-n> :NERDTreeToggle<cr>
+autocmd VimEnter * NERDTree
+autocmd BufEnter * NERDTreeMirror
+nnoremap <Leader>n :NERDTreeToggle<cr>
 " }}}
 
 " Gundo.vim settings {{{
@@ -108,7 +118,7 @@ map <Leader>a :call SyntaxAttr()<CR>
 
 " ZenCoding settings {{{
 " ----------------------------------------------------------------------------------------------------
-source $HOME/.vim/plugins-zencoding.vim
+"source $HOME/.vim/plugins-zencoding.vim
 " }}}
 
 " RubyTest settings {{{

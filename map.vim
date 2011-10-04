@@ -5,26 +5,6 @@
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
-" Remove support for regular system-wide bindings {{{
-" ----------------------------------------------------------------------------------------------------
-nnoremap <Up> <Esc>
-vnoremap <Up> <NOP>
-inoremap <Up> <NOP>
-nnoremap <Down> <Esc>
-vnoremap <Down> <NOP>
-inoremap <Down> <NOP>
-nnoremap <Left> <Esc>
-vnoremap <Left> <NOP>
-inoremap <Left> <NOP>
-nnoremap <Right> <Esc>
-vnoremap <Right> <NOP>
-inoremap <Right> <NOP>
-" }}}
-
-" Strip HTML tags in selected line {{{
-" ----------------------------------------------------------------------------------------------------
-vnoremap <Leader>h :s/<\/*\([a-z][a-z0-9]*\)[^>]*>//g<CR><Esc>:silent noh<Bar>echo<CR>
-" }}}
 
 " Easy fold navigation {{{
 " ----------------------------------------------------------------------------------------------------

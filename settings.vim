@@ -64,7 +64,6 @@ set showmatch " Show matching parentheses
 set noautoindent " Code auto-indent
 set nosmartindent " Smart code auto-indent
 set cindent
-set showtabline=0 " Always hide tabs
 set hlsearch " Highlight matching search result
 set vb t_vb= " No visual bell
 set viminfo='50,<1000,s100,h,n~/.vim-local/.viminfo " Viminfo settings
@@ -72,7 +71,6 @@ set mls=10 " Check for modelines in the first and last 10 lines
 set noeol
 set wildmenu
 set wildmode=full
-set switchbuf=useopen
 set backspace=indent,eol,start
 set tabpagemax=50
 set isk+=- " Treat “-” like a word separator (for auto-completion!)
