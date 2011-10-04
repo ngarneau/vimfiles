@@ -10,6 +10,13 @@
 syntax on
 " }}}
 
+" Activate autocompletion for PHP, HTML, CSS" {{{
+" ----------------------------------------------------------------------------------------------------
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
+autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
+" }}}
+
 " Activate 256 colors mode (to use in terminal mode) {{{
 " ----------------------------------------------------------------------------------------------------
 set t_Co=256
