@@ -1,36 +1,14 @@
-<<<<<<< HEAD
-" ----------------------------------------------------------------------------------------------------
-" @file         .vimrc
-" @description  Vim configuration file
-" @author       Rémi Prévost (remi, exomel.com)
-" vim: fdm=marker noet ts=4 sts=4 sw=4
-" ----------------------------------------------------------------------------------------------------
-
-call pathogen#runtime_append_all_bundles()
-"call pathogen#helptags()
-
-runtime macros/matchit.vim
-
-source $HOME/.vim/settings.vim
-source $HOME/.vim/plugins.vim
-source $HOME/.vim/map.vim
-source $HOME/.vim/autocmd.vim
-source $HOME/.vim/autocmd_ft.vim
-=======
-set nocompatible
-set noswapfile
-
 """ Bar de setting """
 set guioptions-=T
 
 """ Color scheme & font """
 set guifont=Monaco:h12
 set t_Co=256
-colorscheme ir_black
+colorscheme railscasts
 " colorscheme herald
 
 " F1  - NERDTree plugin
-nnoremap <C-n> :NERDTreeToggle<cr>
+nnoremap <silent> <f1> :NERDTreeToggle<cr>
 autocmd VimEnter * NERDTree
 autocmd BufEnter * NERDTreeMirror
 
@@ -83,28 +61,5 @@ noremap <D-d> m'yyP`'k
 vnoremap <D-d> m'y'>p`'
 " }}}
 
-map <D-1> :tabn 1<CR>
-map <D-2> :tabn 2<CR>
-map <D-3> :tabn 3<CR>
-map <D-4> :tabn 4<CR>
-map <D-5> :tabn 5<CR>
-map <D-6> :tabn 6<CR>
-map <D-7> :tabn 7<CR>
-map <D-8> :tabn 8<CR>
-map <D-9> :tabn 9<CR>
-
-map! <D-1> <C-O>:tabn 1<CR>
-map! <D-2> <C-O>:tabn 2<CR>
-map! <D-3> <C-O>:tabn 3<CR>
-map! <D-4> <C-O>:tabn 4<CR>
-map! <D-5> <C-O>:tabn 5<CR>
-map! <D-6> <C-O>:tabn 6<CR>
-map! <D-7> <C-O>:tabn 7<CR>
-map! <D-8> <C-O>:tabn 8<CR>
-map! <D-9> <C-O>:tabn 9<CR>
 
 
-
-
-
->>>>>>> cd4a34e9ed7ab807c1ea74dac4072205985f1220
