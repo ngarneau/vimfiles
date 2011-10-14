@@ -24,8 +24,8 @@ set t_Co=256
 
 " Activate filetype plugins {{{
 " ----------------------------------------------------------------------------------------------------
-filetype on
-filetype plugin indent on
+""filetype on
+""filetype plugin indent on
 " }}}
 
 " Different colorschemes if we're running vim or gvim {{{
@@ -46,7 +46,7 @@ let g:mapleader = ","
 
 " Activate filetype-based indent settings {{{
 " ----------------------------------------------------------------------------------------------------
-filetype indent on
+""filetype indent on
 " }}}
 
 " Misc. options {{{
@@ -59,23 +59,22 @@ set incsearch " Start to search as soon as we type
 set mouse=a " Use the mouse in all modes
 set number " Show line numbers
 set ts=2 " A tab = 4 spaces
-set sw=2
-set sts=2
-set et
+""set sw=2
+""set sts=2
+""set et
 set whichwrap=h,l,~,[,],<,> " Which caracters to wrap
 set scrolloff=4 " Scroll offset
 set laststatus=2 " Always show the status line
 set noautoread " Do not reload the file if it changes
 set title " Display filename in window title
 set showmatch " Show matching parentheses
-set noautoindent " Code auto-indent
-set nosmartindent " Smart code auto-indent
-set cindent
+""set nosmartindent " Smart code auto-indent
+""set cindent
 set hlsearch " Highlight matching search result
 set vb t_vb= " No visual bell
 set viminfo='50,<1000,s100,h,n~/.vim-local/.viminfo " Viminfo settings
 set mls=10 " Check for modelines in the first and last 10 lines
-set noeol
+""set noeol
 set wildmenu
 set wildmode=full
 set backspace=indent,eol,start
@@ -83,6 +82,7 @@ set tabpagemax=50
 set isk+=- " Treat “-” like a word separator (for auto-completion!)
 set hidden
 set gdefault " Always search/replace globally
+set ai
 " }}}
 
 " Always use UTF-8 {{{

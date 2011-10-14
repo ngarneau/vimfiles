@@ -15,7 +15,7 @@ endif
 " PHP (+HTML) {{{
 " -----------------------------------------------------------------
 au! BufRead,BufNewFile *.php setfiletype php
-au! BufRead,BufNewFile *.tpl.html setfiletype php
+au! BufRead,BufNewFile *.html.php setfiletype html
 " }}}
 
 " Mustache {{{
