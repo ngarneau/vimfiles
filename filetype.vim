@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         filetype.vim
 " @description  Custom filetypes based on extensions
-" @author       Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -14,8 +14,8 @@ endif
 
 " PHP (+HTML) {{{
 " -----------------------------------------------------------------
+au! BufRead,BufNewFile *.html.php setfiletype html.php
 au! BufRead,BufNewFile *.php setfiletype php
-au! BufRead,BufNewFile *.html.php setfiletype html
 " }}}
 
 " Mustache {{{

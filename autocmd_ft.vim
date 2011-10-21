@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         autocmd.vim
 " @description  Auto-commands for specific filetypes
-" @author       Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -25,12 +25,6 @@ autocmd FileType eruby inoremap ;ee <%=  %><Esc>hhi
 " Ruby/Sinatra {{{
 " ----------------------------------------------------------------------------------------------------
 autocmd FileType ruby-sinatra setl expandtab ts=2 shiftwidth=2 softtabstop=2
-" }}}
-
-" QuickFix {{{
-" ----------------------------------------------------------------------------------------------------
-autocmd FileType qf setl scrolloff=0 cursorline
-autocmd FileType qf noremap <CR> <CR>
 " }}}
 
 " Git {{{

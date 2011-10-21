@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         settings.vim
 " @description  Global settings
-" @author       Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -22,12 +22,6 @@ autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
 set t_Co=256
 " }}}
 
-" Activate filetype plugins {{{
-" ----------------------------------------------------------------------------------------------------
-""filetype on
-""filetype plugin indent on
-" }}}
-
 " Different colorschemes if we're running vim or gvim {{{
 " ----------------------------------------------------------------------------------------------------
 if !has('gui_running')
@@ -44,11 +38,6 @@ let mapleader = ","
 let g:mapleader = ","
 " }}}
 
-" Activate filetype-based indent settings {{{
-" ----------------------------------------------------------------------------------------------------
-""filetype indent on
-" }}}
-
 " Misc. options {{{
 " ----------------------------------------------------------------------------------------------------
 set showcmd " Display the command as we type it
@@ -59,22 +48,16 @@ set incsearch " Start to search as soon as we type
 set mouse=a " Use the mouse in all modes
 set number " Show line numbers
 set ts=2 " A tab = 4 spaces
-""set sw=2
-""set sts=2
-""set et
 set whichwrap=h,l,~,[,],<,> " Which caracters to wrap
 set scrolloff=4 " Scroll offset
 set laststatus=2 " Always show the status line
 set noautoread " Do not reload the file if it changes
 set title " Display filename in window title
 set showmatch " Show matching parentheses
-""set nosmartindent " Smart code auto-indent
-""set cindent
 set hlsearch " Highlight matching search result
 set vb t_vb= " No visual bell
 set viminfo='50,<1000,s100,h,n~/.vim-local/.viminfo " Viminfo settings
 set mls=10 " Check for modelines in the first and last 10 lines
-""set noeol
 set wildmenu
 set wildmode=full
 set backspace=indent,eol,start
@@ -82,7 +65,12 @@ set tabpagemax=50
 set isk+=- " Treat “-” like a word separator (for auto-completion!)
 set hidden
 set gdefault " Always search/replace globally
-set ai
+set ai " Auto indent
+set tabstop=2 " Use 2 spaces for tabs
+set shiftwidth=2 " 2 spaces for autoindent
+set softtabstop=2 " Use soft tabs
+set nocompatible
+set noswapfile
 " }}}
 
 " Always use UTF-8 {{{
@@ -153,4 +141,11 @@ set statusline+=%3*total:%4*%L\
 " Mark trailing whitespace {{{
 " ----------------------------------------------------------------------------------------------------
 match Todo /\(\t\|\s\)\+$/
+" }}}
+
+" Folding settings {{{
+" ----------------------------------------------------------------------------------------------------
+set foldmethod=marker
+set foldlevel=0
+set foldenable
 " }}}
