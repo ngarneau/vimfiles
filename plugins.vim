@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         plugins.vim
 " @description  Plugins settings
-" @author       Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -16,14 +16,6 @@ let Tlist_Show_One_File = 1
 let Tlist_Sort_Type = "name"
 let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 "let Tlist_Ctags_Cmd = '/Users/remi/Local/homebrew/bin/ctags'
-" }}}
-
-" CommandT settings {{{
-" ----------------------------------------------------------------------------------------------------
-"map <Leader>o :CommandT<CR>
-"map <Leader>t :CommandT<CR>
-"map <Leader>, :CommandTBuffer<CR>
-"map <Leader>T :CommandTFlush<CR>:CommandT<CR>
 " }}}
 
 " FuzzyFinder settings {{{
@@ -114,11 +106,6 @@ vnoremap <Leader>f :Tab /
 " SyntaxAttr settings {{{
 " ----------------------------------------------------------------------------------------------------
 map <Leader>a :call SyntaxAttr()<CR>
-" }}}
-
-" ZenCoding settings {{{
-" ----------------------------------------------------------------------------------------------------
-"source $HOME/.vim/plugins-zencoding.vim
 " }}}
 
 " RubyTest settings {{{

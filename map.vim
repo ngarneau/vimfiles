@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         map.vim
 " @description  Keyboard mappings
-" @author       Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -92,15 +92,6 @@ noremap <C-Down> ddp
 
 " Easy tab navigation {{{
 " ----------------------------------------------------------------------------------------------------
-"noremap <S-C-Tab> :tabprevious<CR>
-"inoremap <S-C-Tab> <Esc>:tabprevious<CR>
-"vnoremap <S-C-Tab> <Esc>:tabprevious<CR>
-"noremap <C-Tab> :tabnext<CR>
-"inoremap <C-Tab> <Esc>:tabnext<CR>
-"vnoremap <C-Tab> <Esc>:tabnext<CR>
-"noremap <M-D-Left> <Esc>:tabprevious<CR>
-"noremap <M-D-Right> <Esc>:tabnext<CR>
-
 noremap <S-C-Tab> :bprevious<CR>
 inoremap <S-C-Tab> <Esc>:bprevious<CR>
 vnoremap <S-C-Tab> <Esc>:bprevious<CR>
@@ -108,11 +99,6 @@ noremap <C-Tab> :bnext<CR>
 inoremap <C-Tab> <Esc>:bnext<CR>
 vnoremap <C-Tab> <Esc>:bnext<CR>
 
-" }}}
-
-" Reload the current file {{{
-" ----------------------------------------------------------------------------------------------------
-"noremap <D-r> :e<CR>
 " }}}
 
 " Function keys {{{
@@ -142,17 +128,6 @@ vnoremap <D-d> m'y'>p`'
 " Select only the text caracters in the current line {{{
 " ----------------------------------------------------------------------------------------------------
 noremap √ ^v$h
-" }}}
-
-" Easy indentation in visual mode {{{
-" ----------------------------------------------------------------------------------------------------
-vnoremap < <gv
-vnoremap > >gv|
-vnoremap <Tab> >gv|
-vnoremap <S-Tab> <gv
-nnoremap  <C-i>
-nnoremap <Tab> mzV>`zl
-nnoremap <S-Tab> mzV<`zh
 " }}}
 
 " Clear search-highlighted terms {{{
@@ -220,11 +195,6 @@ map <leader>x :call ToggleScratch()<CR>
 noremap € $h
 " }}}
 
-" Let’s try not to use ESC anymore {{{
-"inoremap jj <Esc>
-"inoremap jk <Esc>
-" }}}
-
 " Tmux-like split panes navigation {{{
 noremap <C-A>% :vsplit<CR><C-W>l
 noremap <C-A>s :split<CR><C-W>j
@@ -232,6 +202,19 @@ noremap <C-A>h <C-W>h
 noremap <C-A>l <C-W>l
 noremap <C-A>k <C-W>k
 noremap <C-A>j <C-W>j
+" }}}
+
+" Easy indentation in visual mode {{{
+" ----------------------------------------------------------------------------------------------------
+vnoremap < <gv
+vnoremap > >gv|
+noremap <·> >gv|
+noremap — >gv
+vnoremap <Tab> >gv|
+vnoremap <S-Tab> <gv
+nnoremap  <C-i>
+nnoremap <Tab> mzV>`zl
+nnoremap <S-Tab> mzV<`zh
 " }}}
 
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
