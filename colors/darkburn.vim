@@ -73,7 +73,7 @@ let g:colors_name="darkburn"
 
 hi Boolean         guifg=#dca3a3
 hi Character       guifg=#dca3a3 gui=bold
-hi Comment         guifg=#7f9f7f gui=italic
+hi Comment         guifg=#8cd0d3 gui=italic
 hi Conditional     guifg=#f0dfaf gui=bold
 hi Constant        guifg=#dca3a3 gui=bold
 hi Cursor          guifg=#000d18 guibg=#8faf9f gui=bold
@@ -250,7 +250,7 @@ if exists("g:darkburn_high_Contrast")
     hi SignColumn      guifg=#9fafaf guibg=#181818 gui=bold
     hi TabLineFill     guifg=#cfcfaf guibg=#181818 gui=bold
     hi TabLineSel      guifg=#efefef guibg=#1c1c1b gui=bold
-    hi TabLine         guifg=#b6bf98 guibg=#181818 gui=bold
+    hi TabLine         guifg=#262626 guibg=#181818 gui=bold
     hi CursorColumn    guifg=#dcdccc guibg=#2b2b2b
 else
     " Original, lighter background
@@ -264,7 +264,7 @@ else
     hi SignColumn      guifg=#9fafaf guibg=#343434 gui=bold
     hi TabLineFill     guifg=#cfcfaf guibg=#353535 gui=bold
     hi TabLineSel      guifg=#efefef guibg=#3a3a39 gui=bold
-    hi TabLine         guifg=#b6bf98 guibg=#353535 gui=bold
+    hi TabLine         guifg=#262626 guibg=#353535 gui=bold
     hi CursorColumn    guifg=#dcdccc guibg=#4f4f4f
 endif
     

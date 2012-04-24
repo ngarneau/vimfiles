@@ -33,9 +33,9 @@ if version >= 700
 	exe 'hi CursorColumn guibg=#262626'
 	exe 'hi MatchParen guifg=white guibg=#80a090 gui=bold'
 
-	exe 'hi TabLine guifg=#a09998 guibg=#202020'
-	exe 'hi TabLineFill guifg=#a09998 guibg=#202020'
-	exe 'hi TabLineSel guifg=#a09998 guibg=#404850'
+	exe 'hi TabLine guifg=#7c7776 guibg=#202020'
+	exe 'hi TabLineFill guifg=#7c7776 guibg=#202020'
+	exe 'hi TabLineSel guifg=#7c7776 guibg=#404850'
 
 	exe 'hi Pmenu guifg=#605958 guibg=#303030'
 	exe 'hi PmenuSel guifg=#d8d3d2 guibg=#404040'

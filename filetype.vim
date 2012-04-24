@@ -14,7 +14,8 @@ endif
 
 " PHP (+HTML) {{{
 " -----------------------------------------------------------------
-au! BufRead,BufNewFile *.html.php setfiletype php
+au! BufRead,BufNewFile *.html.php setfiletype html.php
+au! BufRead,BufNewFile *.phtml setfiletype html.php
 au! BufRead,BufNewFile *.php setfiletype php
 au! BufRead,BufNewFile *.html setfiletype html
 " }}}

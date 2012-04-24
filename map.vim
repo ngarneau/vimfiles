@@ -6,14 +6,16 @@
 " ----------------------------------------------------------------------------------------------------
 
 
-" Easy fold navigation {{{
+" Dissable those arrows ! {{{
 " ----------------------------------------------------------------------------------------------------
-noremap <silent> <D-J> <Nop>
-noremap <silent> <D-K> <Nop>
-noremap <silent> ∆ zj
-noremap <silent> ˚ zk
-noremap <silent>  za
-noremap <silent> <S-CR> zMzo
+inoremap  <Up>     <NOP>
+inoremap  <Down>   <NOP>
+inoremap  <Left>   <NOP>
+inoremap  <Right>  <NOP>
+noremap   <Up>     <NOP>
+noremap   <Down>   <NOP>
+noremap   <Left>   <NOP>
+noremap   <Right>  <NOP>
 " }}}
 
 " Easy lines navigation {{{

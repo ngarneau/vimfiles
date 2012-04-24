@@ -47,7 +47,7 @@ set smartcase " Smart-case search mode
 set incsearch " Start to search as soon as we type
 set mouse=a " Use the mouse in all modes
 set number " Show line numbers
-set ts=2 " A tab = 4 spaces
+set ts=4 " A tab = 4 spaces
 set whichwrap=h,l,~,[,],<,> " Which caracters to wrap
 set scrolloff=4 " Scroll offset
 set laststatus=2 " Always show the status line
@@ -66,9 +66,9 @@ set isk+=- " Treat “-” like a word separator (for auto-completion!)
 set hidden
 set gdefault " Always search/replace globally
 set ai " Auto indent
-set tabstop=2 " Use 2 spaces for tabs
-set shiftwidth=2 " 2 spaces for autoindent
-set softtabstop=2 " Use soft tabs
+set tabstop=4 " Use 2 spaces for tabs
+set shiftwidth=4 " 2 spaces for autoindent
+set softtabstop=4 " Use soft tabs
 set nocompatible
 set noswapfile
 " }}}
@@ -102,7 +102,7 @@ endif
 set nowrap
 set sidescroll=4
 set sidescrolloff=14
-set listchars=precedes:←,extends:→,nbsp:◊,trail:⠿,eol:\ ,tab:●·
+set listchars=precedes:←,extends:→,nbsp:◊,trail:⠿,eol:\ ,tab:>-
 set list
 " }}}
 
@@ -140,7 +140,7 @@ set statusline+=%3*total:%4*%L\
 
 " Mark trailing whitespace {{{
 " ----------------------------------------------------------------------------------------------------
-match Todo /\(\t\|\s\)\+$/
+"match Todo /\(\t\|\s\)\+$/
 " }}}
 
 " Folding settings {{{
@@ -148,4 +148,10 @@ match Todo /\(\t\|\s\)\+$/
 set foldmethod=marker
 set foldlevel=0
 set foldenable
+" }}}
+
+" Taglist {{{
+" ----------------------------------------------------------------------------------------------------
+set foldenable
+"set Tlist_Auto_Open=1
 " }}}

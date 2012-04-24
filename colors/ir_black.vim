@@ -50,7 +50,7 @@ endif
 " }}}
 
 " Syntax highlighting (base) {{{
-hi Comment          guifg=#7C7C7C     guibg=NONE        gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
+hi Comment          guifg=#7C7C7C     guibg=#1E262E        gui=NONE      ctermfg=darkgray    ctermbg=NONE        cterm=NONE
 hi String           guifg=#A8FF60     guibg=NONE        gui=NONE      ctermfg=green       ctermbg=NONE        cterm=NONE
 hi Number           guifg=#FF73FD     guibg=NONE        gui=NONE      ctermfg=magenta     ctermbg=NONE        cterm=NONE
 

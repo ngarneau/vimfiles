@@ -7,16 +7,25 @@
 
 " Taglist settings {{{
 " ----------------------------------------------------------------------------------------------------
-map éé :TlistToggle<cr>
-let Tlist_GainFocus_On_ToggleOpen = 1
-let Tlist_Use_Right_Window = 1
-let Tlist_Close_On_Select = 1
-let Tlist_File_Fold_Auto_Close = 1
-let Tlist_Show_One_File = 1
-let Tlist_Sort_Type = "name"
-let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
+"map <Leader>; :TlistToggle<cr>
+"let Tlist_GainFocus_On_ToggleOpen = 1
+""let Tlist_Use_Right_Window = 1
+""let Tlist_Close_On_Select = 1
+""let Tlist_File_Fold_Auto_Close = 1
+""let Tlist_Show_One_File = 0
+""let Tlist_Auto_Open = 1
+""let Tlist_Sort_Type = "name"
+""let Tlist_Ctags_Cmd = '/usr/local/bin/ctags'
 "let Tlist_Ctags_Cmd = '/Users/remi/Local/homebrew/bin/ctags'
 " }}}
+
+" Tagbar settings {{{
+" ----------------------------------------------------------------------------------------------------
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
+let g:tagbar_width=26                          " Default is 40, seems too wide
+map <Leader>; :TagbarToggle<cr>       
+" }}}
+
 
 " FuzzyFinder settings {{{
 " ----------------------------------------------------------------------------------------------------
@@ -28,6 +37,7 @@ map <Leader>, :FufBuffer<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
 map <Leader>l :FufLine<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
 map <Leader>T :FufRenewCache<CR>:FufFile<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
 map <Leader>m :FufMruFile<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
+noremap <Leader>z :FufTagWithCursorWord!<CR> 
 let g:fuf_modesDisable = []
 let g:fuf_keyPreview = '<C-k>'
 let g:fuf_buffer_keyDelete = '<C-d>'

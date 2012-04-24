@@ -293,9 +293,9 @@ if version >= 700
   call s:X("MatchParen","ffffff","80a090","bold","","")
   call s:X("MatchParen","333333","ffffff","bold","","")
 
-  call s:X("TabLine","000000","b0b8c0","italic","","Black")
-  call s:X("TabLineFill","9098a0","","","","")
-  call s:X("TabLineSel","000000","f0f0f0","italic,bold","","")
+  call s:X("TabLine","000000","000000","italic","","Black")
+  call s:X("TabLineFill","000000","","","","")
+  call s:X("TabLineSel","000000","000000","italic,bold","","")
 
   " Auto-completion
   call s:X("Pmenu","ffffff","000000","","","")
@@ -336,7 +336,7 @@ call s:X("PreProc","8fbfdc","","","LightBlue","")
 hi link Operator Normal
 
 call s:X("Type","ffb964","","","Yellow","")
-call s:X("NonText","808080","151515","","","")
+call s:X("NonText","Black","151515","","","")
 
 call s:X("SpecialKey","808080","343434","","","")
 
