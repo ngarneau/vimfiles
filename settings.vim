@@ -71,6 +71,7 @@ set shiftwidth=4 " 2 spaces for autoindent
 set softtabstop=4 " Use soft tabs
 set nocompatible
 set noswapfile
+set autochdir
 " }}}
 
 " Always use UTF-8 {{{

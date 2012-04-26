@@ -84,6 +84,7 @@ noremap <C-J> <C-W>j
 " Because 'CTRL-T' is easier to type on a canadian keyboard {{{
 " ----------------------------------------------------------------------------------------------------
 noremap <C-T> <C-]>
+noremap <C-R> <C-T>
 " }}}
 
 " Easy line moving {{{
