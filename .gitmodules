@@ -16,9 +16,6 @@
 [submodule "bundle/vim-textobj-rubyblock"]
 	path = bundle/vim-textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
-[submodule "bundle/localrc"]
-	path = bundle/localrc
-	url = https://github.com/thinca/vim-localrc.git
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
@@ -43,3 +40,6 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundel/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
