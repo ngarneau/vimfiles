@@ -26,7 +26,7 @@ set t_Co=256
 " ----------------------------------------------------------------------------------------------------
 if !has('gui_running')
 	syntax on
-	colorscheme twilight3
+	colorscheme desert
 else
 	syntax on
 endif
@@ -69,6 +69,7 @@ set ai " Auto indent
 set tabstop=4 " Use 2 spaces for tabs
 set shiftwidth=4 " 2 spaces for autoindent
 set softtabstop=4 " Use soft tabs
+set expandtab
 set nocompatible
 set noswapfile
 set autochdir
@@ -76,8 +77,8 @@ set autochdir
 
 " Always use UTF-8 {{{
 " ----------------------------------------------------------------------------------------------------
-set encoding=utf-8
-set fileencoding=utf-8
+set encoding=latin1
+set fileencoding=latin1
 " }}}
 
 " Do not highlight special PHP functions (to ensure compatibility with most color schemes) {{{
@@ -103,8 +104,8 @@ endif
 set nowrap
 set sidescroll=4
 set sidescrolloff=14
-set listchars=precedes:←,extends:→,nbsp:◊,trail:⠿,eol:\ ,tab:>-
-set list
+""set list!
+""set listchars=precedes:<-,extends:->,nbsp:#,eol:.,tab:>-
 " }}}
 
 " Statusline {{{
