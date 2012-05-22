@@ -22,7 +22,7 @@ set guifont=Monaco:h12
 
 " Schéma de couleur {{{
 " ------------------------------------------------------------
-colorscheme twilight2
+colorscheme desert 
 "}}}
 
 " Options 'fullscreen' {{{
