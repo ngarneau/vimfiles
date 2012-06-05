@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         autocmd.vim
 " @description  Auto-commands
-" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 

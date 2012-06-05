@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         filetype.vim
 " @description  Custom filetypes based on extensions
-" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -18,12 +18,6 @@ au! BufRead,BufNewFile *.html.php setfiletype html.php
 au! BufRead,BufNewFile *.phtml setfiletype html.php
 au! BufRead,BufNewFile *.php setfiletype php
 au! BufRead,BufNewFile *.html setfiletype html
-" }}}
-
-" Mustache {{{
-" -----------------------------------------------------------------
-runtime! ftdetect/*.vim
-au BufNewFile,BufRead *.mustache setfiletype html.mustache
 " }}}
 
 " Ruby {{{
@@ -44,33 +38,29 @@ augroup markdown
 augroup END
 " }}}
 
-" Apache configuration files {{{
-" -----------------------------------------------------------------
-au! BufRead,BufNewFile *.conf setfiletype apache
-" }}}
-
-" ActionScript (Javascript) {{{
-" -----------------------------------------------------------------
-au! BufRead,BufNewFile *.as setfiletype javascript
-" }}}
-
 " Javascript / jQuery {{{
 " -----------------------------------------------------------------
+au! BufRead,BufNewFile *.as setfiletype javascript
 au! BufRead,BufNewFile *.js setfiletype javascript.jquery
-" }}}
-
-" Liquid {{{
-" -----------------------------------------------------------------
-au BufNewFile,BufRead *.liquid setfiletype liquid
-" }}}
-
-" tmux {{{
-" -----------------------------------------------------------------
-au BufNewFile,BufRead .tmux.conf*,tmux.conf* setf tmux
 " }}}
 
 " SASS {{{
 " -----------------------------------------------------------------
 au BufRead,BufNewFile *.sass setf sass
 au BufRead,BufNewFile *.scss setf scss
+" }}}
+
+" Pig {{{
+" -----------------------------------------------------------------
+au BufRead,BufNewFile *.pig setf pig
+" }}}
+
+" Haskell {{{
+" -----------------------------------------------------------------
+au BufRead,BufNewFile *.hs setf haskell
+" }}}
+
+" C++ {{{
+" -----------------------------------------------------------------
+au BufRead,BufNewFile *.cpp setf cpp
 " }}}

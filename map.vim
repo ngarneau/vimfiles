@@ -177,35 +177,6 @@ function! <SID>SynStack()
 endfunc
 " }}}
 
-" Change the working directory to the current file directory {{{
-noremap èè :lcd %:p:h<CR>
-" }}}
-
-" Toggle Scratch buffer {{{
-" Credit: http://weblog.jamisbuck.org/2008/11/17/vim-follow-up
-function! ToggleScratch()
-  if expand('%') == g:ScratchBufferName
-    quit
-  else
-    Sscratch
-  endif
-endfunction
-
-map <leader>x :call ToggleScratch()<CR>
-" }}}
-
-" Use Alt-4 to go to the end of the line, but not totally.{{{
-noremap € $h
-" }}}
-
-" Tmux-like split panes navigation {{{
-noremap <C-A>% :vsplit<CR><C-W>l
-noremap <C-A>s :split<CR><C-W>j
-noremap <C-A>h <C-W>h
-noremap <C-A>l <C-W>l
-noremap <C-A>k <C-W>k
-noremap <C-A>j <C-W>j
-" }}}
 
 " Easy indentation in visual mode {{{
 " ----------------------------------------------------------------------------------------------------

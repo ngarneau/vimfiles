@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         settings.vim
 " @description  Global settings
-" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -66,19 +66,17 @@ set isk+=- " Treat “-” like a word separator (for auto-completion!)
 set hidden
 set gdefault " Always search/replace globally
 set ai " Auto indent
-set tabstop=4 " Use 2 spaces for tabs
-set shiftwidth=4 " 2 spaces for autoindent
+set shiftwidth=4 " 4 spaces for autoindent
 set softtabstop=4 " Use soft tabs
 set expandtab
 set nocompatible
 set noswapfile
-set autochdir
 " }}}
 
 " Always use UTF-8 {{{
 " ----------------------------------------------------------------------------------------------------
-set encoding=latin1
-set fileencoding=latin1
+set encoding=utf-8
+set fileencoding=utf-8
 " }}}
 
 " Do not highlight special PHP functions (to ensure compatibility with most color schemes) {{{
@@ -86,26 +84,11 @@ set fileencoding=latin1
 let php_special_functions = 0
 " }}}
 
-" Backups {{{
-" ----------------------------------------------------------------------------------------------------
-set backup
-set swapfile
-set backupdir=$HOME/.vim-local/.vimbackup
-set directory=$HOME/.vim-local/.vimswap
-au BufEnter /private/tmp/crontab.* setl backupcopy=yes
-if exists("+undofile")
-	set undofile
-	set undodir=~/.vim-local/.undo
-endif
-" }}}
-
 " No automatic word-wrap! {{{
 " ----------------------------------------------------------------------------------------------------
 set nowrap
 set sidescroll=4
 set sidescrolloff=14
-""set list!
-""set listchars=precedes:<-,extends:->,nbsp:#,eol:.,tab:>-
 " }}}
 
 " Statusline {{{
@@ -140,20 +123,9 @@ set statusline+=%3*line:%4*%l\ \
 set statusline+=%3*total:%4*%L\ 
 " }}}
 
-" Mark trailing whitespace {{{
-" ----------------------------------------------------------------------------------------------------
-"match Todo /\(\t\|\s\)\+$/
-" }}}
-
 " Folding settings {{{
 " ----------------------------------------------------------------------------------------------------
 set foldmethod=marker
 set foldlevel=0
 set foldenable
-" }}}
-
-" Taglist {{{
-" ----------------------------------------------------------------------------------------------------
-set foldenable
-"set Tlist_Auto_Open=1
 " }}}
