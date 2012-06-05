@@ -63,8 +63,6 @@ nnoremap <Leader>b :BufExplorer<CR>
 " NERDTree settings" {{{
 " ----------------------------------------------------------------------------------------------------
 ""nnoremap <C-n> :NERDTreeToggle<cr>
-autocmd VimEnter * NERDTree
-autocmd BufEnter * NERDTreeMirror
 nnoremap <Leader>n :NERDTreeToggle<cr>
 " }}}
 
