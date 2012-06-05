@@ -205,7 +205,4 @@ function! CallInterpreter()
     echohl ErrorMsg | echo "Err: No shebang present in file, canceling execution" | echohl None
   endif
 endfunction
-unmap <Leader>rm
-unmap <Leader>rv
-unmap <Leader>rc
 map <Leader>r :call CallInterpreter()<CR>
