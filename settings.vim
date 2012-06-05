@@ -17,21 +17,6 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType scss set omnifunc=csscomplete#CompleteCSS
 " }}}
 
-" Activate 256 colors mode (to use in terminal mode) {{{
-" ----------------------------------------------------------------------------------------------------
-set t_Co=256
-" }}}
-
-" Different colorschemes if we're running vim or gvim {{{
-" ----------------------------------------------------------------------------------------------------
-if !has('gui_running')
-	syntax on
-	colorscheme desert
-else
-	syntax on
-endif
-" }}}
-
 " Define the leader key {{{
 " ----------------------------------------------------------------------------------------------------
 let mapleader = ","
@@ -71,6 +56,8 @@ set softtabstop=4 " Use soft tabs
 set expandtab
 set nocompatible
 set noswapfile
+filetype plugin on
+filetype indent on
 " }}}
 
 " Always use UTF-8 {{{
