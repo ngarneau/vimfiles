@@ -5,7 +5,7 @@ To use those files with Vim, you’d usually do:
     $ cd ~
     $ mv .vim .vim-old
     $ mkdir -p ~/.vim-local/{.vimbackup,.vimswap}/
-    $ git clone git://github.com/remiprev/vimfiles.git .vim
+    $ git clone git://github.com/ngarneau/vimfiles.git .vim
     $ git submodule update --init
 
 
