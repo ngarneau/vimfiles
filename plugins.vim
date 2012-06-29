@@ -10,7 +10,8 @@
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'  " Proper Ctags locations
 let g:tagbar_width=26                          " Default is 40, seems too wide
 map <Leader>; :TagbarToggle<cr>       
-set tags=tags;/
+"set tags=tags;
+set tags+=/Users/ngarneau/Documents/duproprio/.git/tags
 " }}}
 
 " FuzzyFinder settings {{{
@@ -30,10 +31,10 @@ let g:fuf_buffer_keyDelete = '<C-d>'
 let g:fuf_keyOpenTabpage = '<S-CR>'
 let g:fuf_keyOpenVsplit = ''
 let g:fuf_infoFile = '~/.vim-local/.vimfuf'
-let g:fuf_file_prompt = ' file →  '
-let g:fuf_buffer_prompt = 'buffer →  '
-let g:fuf_line_prompt = 'line →  '
-let g:fuf_mrufile_prompt = 'mru →  '
+let g:fuf_file_prompt = ' file ->  '
+let g:fuf_buffer_prompt = 'buffer ->  '
+let g:fuf_line_prompt = 'line ->  '
+let g:fuf_mrufile_prompt = 'mru ->  '
 let g:fuf_previewHeight = 0
 let g:fuf_promptHighlight = "User8"
 " }}}
