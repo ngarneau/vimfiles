@@ -113,3 +113,5 @@ set foldmethod=marker
 set foldlevel=0
 set foldenable
 " }}}
+
+"autocmd BufEnter * silent! lcd %:p:h
