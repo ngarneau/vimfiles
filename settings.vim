@@ -25,23 +25,28 @@ let g:mapleader = ","
 
 " Misc. options {{{
 " ----------------------------------------------------------------------------------------------------
+set nowrap
+set sidescroll=10
+set whichwrap=h,l,<,>,[,]
+set list
+set listchars=tab:>-,trail:-
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab
+set number " Show line numbers
 set showcmd " Display the command as we type it
 set showmode " Display the current mode
 set ignorecase " Ignore case when searching
 set smartcase " Smart-case search mode
 set incsearch " Start to search as soon as we type
 set mouse=a " Use the mouse in all modes
-set number " Show line numbers
-set ts=4 " A tab = 4 spaces
-set whichwrap=h,l,~,[,],<,> " Which caracters to wrap
 set scrolloff=4 " Scroll offset
 set laststatus=2 " Always show the status line
 set noautoread " Do not reload the file if it changes
 set title " Display filename in window title
 set showmatch " Show matching parentheses
 set hlsearch " Highlight matching search result
-set vb t_vb= " No visual bell
-set viminfo='50,<1000,s100,h,n~/.vim-local/.viminfo " Viminfo settings
 set mls=10 " Check for modelines in the first and last 10 lines
 set wildmenu
 set wildmode=full
@@ -51,9 +56,6 @@ set isk+=- " Treat “-” like a word separator (for auto-completion!)
 set hidden
 set gdefault " Always search/replace globally
 set ai " Auto indent
-set shiftwidth=4 " 4 spaces for autoindent
-set softtabstop=4 " Use soft tabs
-set expandtab
 set nocompatible
 set noswapfile
 filetype plugin on
@@ -64,11 +66,6 @@ filetype indent on
 " ----------------------------------------------------------------------------------------------------
 set encoding=utf-8
 set fileencoding=utf-8
-" }}}
-
-" Do not highlight special PHP functions (to ensure compatibility with most color schemes) {{{
-" ----------------------------------------------------------------------------------------------------
-let php_special_functions = 0
 " }}}
 
 " No automatic word-wrap! {{{

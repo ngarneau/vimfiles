@@ -22,7 +22,7 @@ set guifont=Monaco:h12
 
 " Schéma de couleur {{{
 " ------------------------------------------------------------
-colorscheme zenburn
+colorscheme wombat
 "}}}
 
 " Options 'fullscreen' {{{
