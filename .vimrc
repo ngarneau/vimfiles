@@ -10,7 +10,7 @@ call pathogen#helptags()
 
 runtime macros/matchit.vim
 
-colorscheme wombat
+colorscheme lucius
 
 source $HOME/.vim/settings.vim
 source $HOME/.vim/plugins.vim

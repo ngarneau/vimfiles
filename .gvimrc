@@ -22,7 +22,7 @@ set guifont=Monaco:h12
 
 " Schéma de couleur {{{
 " ------------------------------------------------------------
-colorscheme wombat
+colorscheme lucius
 "}}}
 
 " Options 'fullscreen' {{{
