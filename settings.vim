@@ -52,7 +52,7 @@ set wildmenu
 set wildmode=full
 set backspace=indent,eol,start
 set tabpagemax=50
-set isk+=- " Treat ‚Äú-‚Äù like a word separator (for auto-completion!)
+set isk+=- " Treat ø-ø like a word separator (for auto-completion!)
 set hidden
 set gdefault " Always search/replace globally
 set ai " Auto indent
@@ -114,19 +114,5 @@ set foldlevel=0
 set foldenable
 " }}}
 
-" Strip whitespaces {{{
-" ----------------------------------------------------------------------------------------------------
-function! <SID>StripTrailingWhitespaces()
-    " Preparation: save last search, and cursor position.
-    let _s=@/
-    let l = line(".")
-    let c = col(".")
-    " Do the business:
-    %s/\s\+$//e
-    " Clean up: restore previous search history, and cursor position
-    let @/=_s
-    call cursor(l, c)
-endfunction
-" }}}
 
 "autocmd BufEnter * silent! lcd %:p:h
