@@ -189,6 +189,22 @@ nnoremap <S-Tab> mzV<`zh
 
 command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
+" Strip whitespaces {{{
+" ----------------------------------------------------------------------------------------------------
+nnoremap <silent> <F5> :call <SID>StripTrailingWhitespaces()<CR>
+function! <SID>StripTrailingWhitespaces()
+    " Preparation: save last search, and cursor position.
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    " Do the business:
+    %s/\s\+$//e
+    " Clean up: restore previous search history, and cursor position
+    let @/=_s
+    call cursor(l, c)
+endfunction
+" }}}
+
 let g:surround_45 = "#{\r}"
 let g:surround_61 = "\"#{\r}\""
 inoremap ## #{}<Esc>i
