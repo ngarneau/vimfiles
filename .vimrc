@@ -11,7 +11,7 @@ call pathogen#helptags()
 runtime macros/matchit.vim
 
 syntax enable
-colorscheme zenburn
+colorscheme solarized
 
 source $HOME/.vim/settings.vim
 source $HOME/.vim/plugins.vim
