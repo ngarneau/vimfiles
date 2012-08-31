@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
-" @file         .gvimrc
-" @description  Gvim configuration file
-" @author       Rémi Prévost (remi, exomel.com)
+" @file			.gvimrc
+" @description	Gvim configuration file
+" @author		Rémi Prévost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -23,7 +23,14 @@ set guifont=Monaco:h12
 " Schéma de couleur {{{
 " ------------------------------------------------------------
 syntax enable
+let g:solarized_termcolors=256
+let g:solarized_termtrans = 1
 colorscheme solarized
+if has('gui_running')
+  set background=light
+else
+  set background=dark
+endif
 "}}}
 
 " Options 'fullscreen' {{{
@@ -59,4 +66,4 @@ map <F12> :botright copen<CR>
 "set columns=149
 "set lines=36
 set showtabline=0
-" }}}
+e }}}
