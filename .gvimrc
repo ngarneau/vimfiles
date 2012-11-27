@@ -23,14 +23,7 @@ set guifont=Monaco:h12
 " Schéma de couleur {{{
 " ------------------------------------------------------------
 syntax enable
-let g:solarized_termcolors=256
-let g:solarized_termtrans = 1
-colorscheme solarized
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
+colorscheme lucius
 "}}}
 
 " Options 'fullscreen' {{{

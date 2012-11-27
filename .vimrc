@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         .vimrc
 " @description  Vim configuration file
-" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by RÃ©mi PrÃ©vost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by RÃÂ©mi PrÃÂ©vost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -11,7 +11,7 @@ call pathogen#helptags()
 runtime macros/matchit.vim
 
 syntax enable
-colorscheme solarized
+colorscheme lucius
 
 source $HOME/.vim/settings.vim
 source $HOME/.vim/plugins.vim
