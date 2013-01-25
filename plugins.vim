@@ -20,7 +20,8 @@ map <Leader>o :FufFileWithCurrentBufferDir<CR>:call histdel(":", '\(^Fuf\\|call\
 map <Leader>t :FufFile<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
 map <Leader>a :FufFile<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
 map <Leader>b :FufBuffer<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
-map <Leader>, :FufBuffer<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
+"map <Leader>, :FufBuffer<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
+map <Leader>, :Bufferlist<CR>
 map <Leader>l :FufLine<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
 map <Leader>T :FufRenewCache<CR>:FufFile<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
 map <Leader>m :FufMruFile<CR>:call histdel(":", '\(^Fuf\\|call\shistdel\)')<CR>
@@ -65,6 +66,8 @@ nnoremap <Leader>b :BufExplorer<CR>
 " ----------------------------------------------------------------------------------------------------
 ""nnoremap <C-n> :NERDTreeToggle<cr>
 nnoremap <Leader>n :NERDTreeToggle<cr>
+let g:NERDTreeWinSize=40
+let NERDTreeWinSize=40
 " }}}
 
 " Gundo.vim settings {{{

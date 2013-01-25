@@ -23,7 +23,8 @@ set guifont=Monaco:h12
 " Schéma de couleur {{{
 " ------------------------------------------------------------
 syntax enable
-colorscheme lucius
+colorscheme solarized
+set background=light
 "}}}
 
 " Options 'fullscreen' {{{

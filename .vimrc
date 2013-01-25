@@ -11,7 +11,8 @@ call pathogen#helptags()
 runtime macros/matchit.vim
 
 syntax enable
-colorscheme lucius
+colorscheme solarized
+set background=light
 
 source $HOME/.vim/settings.vim
 source $HOME/.vim/plugins.vim
