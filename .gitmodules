@@ -4,9 +4,18 @@
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "bundle-inactive/vim-todo"]
+	path = bundle-inactive/vim-todo
+	url = https://github.com/svenfuchs/vim-todo.git
+[submodule "bundle-inactive/vim-layout"]
+	path = bundle-inactive/vim-layout
+	url = https://github.com/svenfuchs/vim-layout.git
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = git://git.wincent.com/command-t.git
 [submodule "bundle/vim-bundler"]
 	path = bundle/vim-bundler
 	url = https://github.com/tpope/vim-bundler.git
@@ -16,6 +25,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "bundel/buffet"]
+[submodule "bundle/buffet"]
 	path = bundle/buffet
 	url = https://github.com/sandeepcr529/Buffet.vim.git
