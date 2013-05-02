@@ -58,6 +58,8 @@ set gdefault " Always search/replace globally
 set ai " Auto indent
 set nocompatible
 set noswapfile
+set paste
+set clipboard+=unnamed
 filetype plugin on
 filetype indent on
 " }}}
