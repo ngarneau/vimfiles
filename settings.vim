@@ -113,8 +113,5 @@ set statusline+=%3*total:%4*%L\
 " ----------------------------------------------------------------------------------------------------
 set foldmethod=marker
 set foldlevel=0
-set foldenable
 " }}}
 
-
-"autocmd BufEnter * silent! lcd %:p:h
