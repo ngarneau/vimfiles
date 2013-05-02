@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------
 " @file         map.vim
 " @description  Keyboard mappings
-" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by Rémi Prévost (remi, exomel.com)
+" @author       Nicolas Garneau (ngarneau, ngarneau.com) inspired by RÃÂ©mi PrÃÂ©vost (remi, exomel.com)
 " vim: fdm=marker noet ts=4 sts=4 sw=4
 " ----------------------------------------------------------------------------------------------------
 
@@ -27,19 +27,12 @@ noremap <silent> Ø mo<Esc>O<Esc>j`o
 map K <Esc>i<CR><Esc><Esc>
 " }}}
 
-" Always go to the mark’s line and column {{{
+" Always go to the markÃ¢ÂÂs line and column {{{
 " ----------------------------------------------------------------------------------------------------
 noremap ' `
 vnoremap ' `
 noremap g' g`
 vnoremap g' g`
-" }}}
-
-" Remap ^ caracters {{{
-" ----------------------------------------------------------------------------------------------------
-noremap â ^a
-noremap î ^i
-noremap ô ^o
 " }}}
 
 " Add a new '/' text object {{{
@@ -51,31 +44,19 @@ vnoremap a/ f/oF/
 onoremap i; :normal T:lvt;<CR>
 " }}}
 
-" We often press 'Shift' when we should not {{{
-" ----------------------------------------------------------------------------------------------------
-command! -nargs=* -complete=file Q q <args>
-command! -nargs=* -complete=file W w <args>
-command! -nargs=* -complete=file Wq wq <args>
-command! -nargs=* -complete=file WQ wq <args>
-command! -nargs=* -complete=file E e <args>
-command! -nargs=* -complete=file Cd cd <args>
-command! -nargs=* -complete=file CD cd <args>
-command! -nargs=* -complete=option Set set <args>
-" }}}
-
 " Let's remap Enter and Backspace {{{
 " ----------------------------------------------------------------------------------------------------
 vnoremap  <NOP>
 vnoremap <BS> dk$
 " }}}
 
-" Easy split navigation {{{
-" ----------------------------------------------------------------------------------------------------
-noremap <C-H> <C-W>h
-noremap <C-L> <C-W>l
-noremap <C-K> <C-W>k
-noremap <C-J> <C-W>j
-" }}}
+		" Easy split navigation {{{
+		" ----------------------------------------------------------------------------------------------------
+		noremap <C-H> <C-W>h
+		noremap <C-L> <C-W>l
+		noremap <C-K> <C-W>k
+		noremap <C-J> <C-W>j
+		" }}}
 
 " Because 'CTRL-T' is easier to type on a canadian keyboard {{{
 " ----------------------------------------------------------------------------------------------------
@@ -112,10 +93,6 @@ noremap <F11> :set expandtab!<Bar>set expandtab?<CR>
 " ----------------------------------------------------------------------------------------------------
 " format YYYYMMDD (eg. 20100105)
 inoremap <D-d> <C-R>=strftime("%Y%m%d")<CR>
-noremap ª cw<C-R>=strftime("%Y%m%d")<CR><Esc>b
-" format ISO 8601 (eg. 2010-01-05T20:51:15-0500)
-inoremap <D-D> <C-R>=strftime("%Y-%m-%dT%H:%M:%S%z")<CR>
-noremap ˇ cw<C-R>=strftime("%Y-%m-%dT%H:%M:%S%z")<CR><Esc>b
 " }}}
 
 " Duplicate line {{{
@@ -134,33 +111,15 @@ noremap √ ^v$h
 noremap <silent> <Space> :silent noh<Bar>echo<CR>
 " }}}
 
-inoremap ;zo {{{<Esc>
-inoremap ;zc }}}<Esc>
-
 " Always use magic regexes {{{
 " ----------------------------------------------------------------------------------------------------
 nnoremap / /\v
 vnoremap / /\v
 " }}}
 
-" Prevent accidental uses of <F1> {{{
-" ----------------------------------------------------------------------------------------------------
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
-" }}}
-
 " Splits! {{{
 " ----------------------------------------------------------------------------------------------------
 nnoremap <C-c> <C-W>c<CR>
-" }}}
-
-" Get help with zero-width {{{
-" ----------------------------------------------------------------------------------------------------
-function! ZeroWidth_help()
-  split ~/.vim/doc/zero_width.mkd
-endfunction
-command! ZeroWidth call ZeroWidth_help()
 " }}}
 
 " Show syntax highlighting groups for word under cursor {{{
@@ -172,7 +131,6 @@ function! <SID>SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 " }}}
-
 
 " Easy indentation in visual mode {{{
 " ----------------------------------------------------------------------------------------------------
@@ -186,8 +144,6 @@ nnoremap  <C-i>
 nnoremap <Tab> mzV>`zl
 nnoremap <S-Tab> mzV<`zh
 " }}}
-
-command! DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
 " Strip whitespaces {{{
 " ----------------------------------------------------------------------------------------------------
