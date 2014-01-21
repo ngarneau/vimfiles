@@ -12,24 +12,22 @@ set nocursorline
 
 " Transparence {{{
 " ------------------------------------------------------------
-set transp=0
 "}}}
 
 " Police {{{
 " ------------------------------------------------------------
-set guifont=Monaco:h12
+set guifont=Monospace
 "}}}
 
 " Schéma de couleur {{{
 " ------------------------------------------------------------
 syntax enable
-colorscheme solarized
+colorscheme autumn2
 set background=light
 "}}}
 
 " Options 'fullscreen' {{{
 " ------------------------------------------------------------
-set fuoptions=maxvert,maxhorz
 "}}}
 
 " Options de l’interface {{{
@@ -43,14 +41,14 @@ set guioptions-=T
 
 " Override MacVim.app commands {{{
 " ------------------------------------------------------------
-macmenu File.Open\ Tab\.\.\. key=<nop>
-macmenu File.Close key=<nop>
-macmenu File.New\ Tab key=<nop>
-macmenu File.Save key=<nop>
-macmenu File.Save\ As\.\.\. key=<nop>
-noremap <D-s> <Nop>
-noremap <D-w> <Nop>
-noremap <D-t> <Nop>
+"macmenu File.Open\ Tab\.\.\. key=<nop>
+"macmenu File.Close key=<nop>
+"macmenu File.New\ Tab key=<nop>
+"macmenu File.Save key=<nop>
+"macmenu File.Save\ As\.\.\. key=<nop>
+"noremap <D-s> <Nop>
+"noremap <D-w> <Nop>
+"noremap <D-t> <Nop>
 " }}}
 
 map <F12> :botright copen<CR>
