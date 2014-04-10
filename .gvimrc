@@ -16,7 +16,8 @@ set nocursorline
 
 " Police {{{
 " ------------------------------------------------------------
-set guifont=Monospace
+set guifont=Monaco:h14
+"set guifont=Monospace
 "}}}
 
 " Schéma de couleur {{{
