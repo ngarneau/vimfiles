@@ -140,7 +140,6 @@ noremap <·> >gv|
 noremap — >gv
 vnoremap <Tab> >gv|
 vnoremap <S-Tab> <gv
-nnoremap  <C-i>
 nnoremap <Tab> mzV>`zl
 nnoremap <S-Tab> mzV<`zh
 " }}}
