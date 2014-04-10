@@ -10,8 +10,12 @@ call pathogen#helptags()
 
 runtime macros/matchit.vim
 
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+
 syntax enable
-colorscheme ir_black
+colorscheme autumn2
 set background=light
 
 source $HOME/.vim/settings.vim
